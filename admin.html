@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — Eventify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+
+  <div class="admin-layout">
+    
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+      <div class="sidebar-header">
+        <span class="logo-text">EVENTIFY</span>
+        <span class="admin-tag">ADMIN PORTAL</span>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#" class="active">📊 Dashboard</a>
+        <a href="events.html">📅 Events</a>
+        <a href="#">🎟️ Bookings</a>
+        <a href="#">👥 Users</a>
+        <a href="tickets.html">🎫 Tickets</a>
+        <a href="schedule.html">⏰ Schedule</a>
+        <a href="#">⚙️ Settings</a>
+        <a href="index.html" class="logout-link">🚪 Logout</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="admin-main">
+      <header class="admin-header">
+        <h2>Dashboard Overview</h2>
+        <div class="admin-profile">
+          <span>Welcome, <strong>Admin User</strong></span>
+        </div>
+      </header>
+
+      <!-- Stat Cards -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h4>Total Events</h4>
+          <span class="stat-num">12</span>
+          <span class="stat-desc">4 active this week</span>
+        </div>
+        <div class="stat-card">
+          <h4>Total Bookings</h4>
+          <span class="stat-num">486</span>
+          <span class="stat-desc">+18% vs last month</span>
+        </div>
+        <div class="stat-card">
+          <h4>Tickets Sold</h4>
+          <span class="stat-num">421</span>
+          <span class="stat-desc">86% venue capacity</span>
+        </div>
+        <div class="stat-card">
+          <h4>Total Revenue</h4>
+          <span class="stat-num">₹1,24,500</span>
+          <span class="stat-desc">Gross transactions</span>
+        </div>
+      </div>
+
+      <!-- Recent Events Management Table -->
+      <section class="admin-section">
+        <div class="section-title-bar">
+          <h3>Recent Events</h3>
+          <button class="btn btn-sm btn-primary">+ Create Event</button>
+        </div>
+        <div class="table-responsive">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Venue</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tech Summit 2026</td>
+                <td>15 Oct 2026</td>
+                <td>Greater Noida</td>
+                <td><span class="status-badge open">Active</span></td>
+                <td>
+                  <button class="btn btn-sm btn-outline">Edit</button>
+                  <button class="btn btn-sm btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Campus Music Fest</td>
+                <td>20 Oct 2026</td>
+                <td>Delhi Stadium</td>
+                <td><span class="status-badge open">Active</span></td>
+                <td>
+                  <button class="btn btn-sm btn-outline">Edit</button>
+                  <button class="btn btn-sm btn-danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>CodeStorm Hackathon</td>
+                <td>25 Oct 2026</td>
+                <td>Noida Sector 62</td>
+                <td><span class="status-badge soon">Upcoming</span></td>
+                <td>
+                  <button class="btn btn-sm btn-outline">Edit</button>
+                  <button class="btn btn-sm btn-danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Recent Bookings Table -->
+      <section class="admin-section">
+        <h3>Recent Bookings</h3>
+        <div class="table-responsive">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Booking ID</th>
+                <th>User</th>
+                <th>Event</th>
+                <th>Seat</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>EVT1024</td>
+                <td>Rahul Sharma</td>
+                <td>Tech Summit 2026</td>
+                <td>A12</td>
+                <td><span class="status-badge open">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>EVT1025</td>
+                <td>Aman Verma</td>
+                <td>Tech Summit 2026</td>
+                <td>B05</td>
+                <td><span class="status-badge open">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>EVT1026</td>
+                <td>Riya Singh</td>
+                <td>Campus Music Fest</td>
+                <td>C08</td>
+                <td><span class="status-badge urgent">Pending</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>

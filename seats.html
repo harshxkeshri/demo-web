@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Seat — Eventify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <span class="logo-text">EVENTIFY</span>
+        <span class="tagline">Smart Events. Seamless Experience.</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="tickets.html">My Tickets</a>
+        <a href="login.html">Login</a>
+      </nav>
+      <a href="events.html" class="btn btn-primary">Book Event</a>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="page-title">
+      <h1>Choose Your Seat</h1>
+      <p>Select your preferred seat for <strong>Tech Summit 2026</strong></p>
+    </div>
+
+    <div class="seat-booking-layout">
+      
+      <!-- Seat Map Section -->
+      <div class="seat-map-wrapper">
+        <div class="screen-indicator">
+          <span>SCREEN / STAGE THIS WAY</span>
+        </div>
+
+        <div class="seat-legend">
+          <div class="legend-item"><span class="seat available"></span> Available</div>
+          <div class="legend-item"><span class="seat selected"></span> Selected</div>
+          <div class="legend-item"><span class="seat booked"></span> Booked</div>
+        </div>
+
+        <!-- Seat Grid Layout -->
+        <div class="seats-grid">
+          
+          <!-- Row A -->
+          <div class="seat-row">
+            <span class="row-label">A</span>
+            <span class="seat available">A01</span>
+            <span class="seat available">A02</span>
+            <span class="seat booked">A03</span>
+            <span class="seat booked">A04</span>
+            <div class="aisle"></div>
+            <span class="seat available">A05</span>
+            <span class="seat available">A06</span>
+            <span class="seat available">A07</span>
+            <span class="seat available">A08</span>
+          </div>
+
+          <!-- Row B -->
+          <div class="seat-row">
+            <span class="row-label">B</span>
+            <span class="seat available">B01</span>
+            <span class="seat available">B02</span>
+            <span class="seat available">B03</span>
+            <span class="seat available">B04</span>
+            <div class="aisle"></div>
+            <span class="seat booked">B05</span>
+            <span class="seat booked">B06</span>
+            <span class="seat available">B07</span>
+            <span class="seat available">B08</span>
+          </div>
+
+          <!-- Row C -->
+          <div class="seat-row">
+            <span class="row-label">C</span>
+            <span class="seat available">C01</span>
+            <span class="seat available">C02</span>
+            <span class="seat booked">C03</span>
+            <span class="seat available">C04</span>
+            <div class="aisle"></div>
+            <span class="seat available">C05</span>
+            <span class="seat available">C06</span>
+            <span class="seat available">C07</span>
+            <span class="seat available">C08</span>
+          </div>
+
+          <!-- Row D -->
+          <div class="seat-row">
+            <span class="row-label">D</span>
+            <span class="seat available">D01</span>
+            <span class="seat available">D02</span>
+            <span class="seat available">D03</span>
+            <span class="seat available">D04</span>
+            <div class="aisle"></div>
+            <span class="seat available">D05</span>
+            <span class="seat available">D06</span>
+            <span class="seat available">D07</span>
+            <span class="seat available">D08</span>
+          </div>
+
+          <!-- Row E -->
+          <div class="seat-row">
+            <span class="row-label">E</span>
+            <span class="seat available">E01</span>
+            <span class="seat available">E02</span>
+            <span class="seat booked">E03</span>
+            <span class="seat booked">E04</span>
+            <div class="aisle"></div>
+            <span class="seat available">E05</span>
+            <span class="seat available">E06</span>
+            <span class="seat available">E07</span>
+            <span class="seat available">E08</span>
+          </div>
+
+          <!-- Row F -->
+          <div class="seat-row">
+            <span class="row-label">F</span>
+            <span class="seat available">F01</span>
+            <span class="seat available">F02</span>
+            <span class="seat available">F03</span>
+            <span class="seat available">F04</span>
+            <div class="aisle"></div>
+            <span class="seat selected">F05</span>
+            <span class="seat available">F06</span>
+            <span class="seat available">F07</span>
+            <span class="seat available">F08</span>
+          </div>
+
+          <!-- Row G -->
+          <div class="seat-row">
+            <span class="row-label">G</span>
+            <span class="seat available">G01</span>
+            <span class="seat available">G02</span>
+            <span class="seat available">G03</span>
+            <span class="seat available">G04</span>
+            <div class="aisle"></div>
+            <span class="seat available">G05</span>
+            <span class="seat available">G06</span>
+            <span class="seat available">G07</span>
+            <span class="seat available">G08</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Booking Summary Sidebar -->
+      <div class="booking-summary-card">
+        <h3>Booking Summary</h3>
+        <hr class="divider">
+        <div class="summary-line">
+          <span>Event:</span>
+          <strong>Tech Summit 2026</strong>
+        </div>
+        <div class="summary-line">
+          <span>Date:</span>
+          <strong>15 October 2026</strong>
+        </div>
+        <div class="summary-line">
+          <span>Seat Selected:</span>
+          <strong class="highlight-text">F05</strong>
+        </div>
+        <div class="summary-line">
+          <span>Ticket Type:</span>
+          <strong>Premium Pass</strong>
+        </div>
+        <div class="summary-line">
+          <span>Price:</span>
+          <strong>₹999</strong>
+        </div>
+        <hr class="divider">
+        <div class="summary-line total">
+          <span>Total Payable:</span>
+          <span class="price-total">₹999</span>
+        </div>
+
+        <a href="booking.html" class="btn btn-primary full-width mt-20">Continue to Booking</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand"><span class="logo-text">EVENTIFY</span></a>
+        <p>Smart Events. Seamless Experience.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <span>🌐 Twitter</span>
+          <span>🌐 LinkedIn</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Eventify. Frontend Prototype.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
